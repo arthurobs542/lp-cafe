@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Aroma - Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <img src="assets/img/logo.jpg" alt="Café Aroma" class="logo" />
+          <span>Café Aroma</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Início</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <i data-lucide="menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-carousel">
+          <div class="carousel-slide active">
+            <div class="slide-content">
+              <h1 class="hero-title">Café Artesanal</h1>
+              <p class="hero-subtitle">
+                Descubra o sabor único dos nossos grãos selecionados
+              </p>
+              <button class="cta-button">Explorar Menu</button>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="slide-content">
+              <h1 class="hero-title">Ambiente Aconchegante</h1>
+              <p class="hero-subtitle">
+                Um espaço perfeito para relaxar e desfrutar
+              </p>
+              <button class="cta-button">Conhecer Espaço</button>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="slide-content">
+              <h1 class="hero-title">Doces Frescos</h1>
+              <p class="hero-subtitle">
+                Acompanhe seu café com nossos deliciosos doces
+              </p>
+              <button class="cta-button">Ver Doces</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" data-lucide="chevron-left"></button>
+          <button
+            class="carousel-btn next"
+            data-lucide="chevron-right"
+          ></button>
+        </div>
+        <div class="carousel-indicators">
+          <span class="indicator active" data-slide="0"></span>
+          <span class="indicator" data-slide="1"></span>
+          <span class="indicator" data-slide="2"></span>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll fade-in-up">Nosso Menu</h2>
+          <div class="menu-categories animate-on-scroll fade-in-scale delay-1">
+            <button class="category-btn active" data-category="bebidas">
+              Bebidas
+            </button>
+            <button class="category-btn" data-category="doces">Doces</button>
+            <button class="category-btn" data-category="lanches">
+              Lanches
+            </button>
+          </div>
+
+          <div class="menu-grid">
+            <div
+              class="menu-item animate-on-scroll fade-in-up delay-1"
+              data-category="bebidas"
+            >
+              <div class="menu-item-image">
+                <img alt="Café Expresso" />
+              </div>
+              <div class="menu-item-content">
+                <h3>Café Expresso</h3>
+                <p>Grãos selecionados, torrados na hora</p>
+                <div class="menu-item-footer">
+                  <span class="price">R$ 4,50</span>
+                  <i data-lucide="coffee"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-item animate-on-scroll fade-in-up delay-2"
+              data-category="bebidas"
+            >
+              <div class="menu-item-image">
+                <img alt="Cappuccino" />
+              </div>
+              <div class="menu-item-content">
+                <h3>Cappuccino</h3>
+                <p>Espresso com leite vaporizado e espuma</p>
+                <div class="menu-item-footer">
+                  <span class="price">R$ 6,90</span>
+                  <i data-lucide="coffee"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-item animate-on-scroll fade-in-up delay-3"
+              data-category="bebidas"
+            >
+              <div class="menu-item-image">
+                <img alt="Latte" />
+              </div>
+              <div class="menu-item-content">
+                <h3>Latte</h3>
+                <p>Café com leite cremoso e arte latte</p>
+                <div class="menu-item-footer">
+                  <span class="price">R$ 7,50</span>
+                  <i data-lucide="coffee"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-item animate-on-scroll fade-in-up delay-4"
+              data-category="doces"
+            >
+              <div class="menu-item-image">
+                <img alt="Croissant" />
+              </div>
+              <div class="menu-item-content">
+                <h3>Croissant</h3>
+                <p>Folhado francês tradicional</p>
+                <div class="menu-item-footer">
+                  <span class="price">R$ 8,90</span>
+                  <i data-lucide="croissant"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-item animate-on-scroll fade-in-up delay-5"
+              data-category="doces"
+            >
+              <div class="menu-item-image">
+                <img alt="Muffin" />
+              </div>
+              <div class="menu-item-content">
+                <h3>Muffin de Chocolate</h3>
+                <p>Delicioso muffin com gotas de chocolate</p>
+                <div class="menu-item-footer">
+                  <span class="price">R$ 9,50</span>
+                  <i data-lucide="cookie"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-item animate-on-scroll fade-in-up delay-6"
+              data-category="lanches"
+            >
+              <div class="menu-item-image">
+                <img alt="Sanduíche" />
+              </div>
+              <div class="menu-item-content">
+                <h3>Sanduíche Club</h3>
+                <p>Frango, bacon, alface e tomate</p>
+                <div class="menu-item-footer">
+                  <span class="price">R$ 15,90</span>
+                  <i data-lucide="sandwich"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text animate-on-scroll fade-in-left">
+              <h2>Sobre Nós</h2>
+              <p>
+                Há mais de 10 anos, o Café Aroma vem proporcionando experiências
+                únicas através do melhor café da cidade. Nossa paixão pela
+                qualidade e tradição nos torna referência em sabor e
+                atendimento.
+              </p>
+              <div class="features">
+                <div class="feature animate-on-scroll fade-in-up delay-1">
+                  <i data-lucide="award"></i>
+                  <span>Grãos Premium</span>
+                </div>
+                <div class="feature animate-on-scroll fade-in-up delay-2">
+                  <i data-lucide="heart"></i>
+                  <span>Feito com Amor</span>
+                </div>
+                <div class="feature animate-on-scroll fade-in-up delay-3">
+                  <i data-lucide="clock"></i>
+                  <span>Atendimento Rápido</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-image animate-on-scroll fade-in-right">
+              <img
+                src="assets/img/pexels-ivan-quijano-293444634-13220287.jpg"
+                alt="Barista preparando café"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll fade-in-up">
+            Entre em Contato
+          </h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item animate-on-scroll fade-in-left delay-1">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <h3>Endereço</h3>
+                  <p>Rua das Flores, 123<br />Centro - São Paulo, SP</p>
+                </div>
+              </div>
+              <div class="contact-item animate-on-scroll fade-in-left delay-2">
+                <i data-lucide="phone"></i>
+                <div>
+                  <h3>Telefone</h3>
+                  <p>(11) 9999-9999</p>
+                </div>
+              </div>
+              <div class="contact-item animate-on-scroll fade-in-left delay-3">
+                <i data-lucide="mail"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>contato@cafearoma.com</p>
+                </div>
+              </div>
+              <div class="contact-item animate-on-scroll fade-in-left delay-4">
+                <i data-lucide="clock"></i>
+                <div>
+                  <h3>Horário</h3>
+                  <p>Seg - Sex: 7h às 19h<br />Sáb - Dom: 8h às 18h</p>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form animate-on-scroll fade-in-right">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Seu nome"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Seu email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Seu telefone"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Sua mensagem"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <i data-lucide="send"></i>
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand animate-on-scroll fade-in-left">
+            <img
+              src="assets/img/logo.jpg"
+              alt="Café Aroma"
+              class="footer-logo"
+            />
+            <span>Café Aroma</span>
+          </div>
+          <div class="footer-social animate-on-scroll fade-in-right">
+            <a href="#" data-lucide="instagram"></a>
+            <a href="#" data-lucide="facebook"></a>
+            <a href="#" data-lucide="twitter"></a>
+          </div>
+        </div>
+        <div class="footer-bottom animate-on-scroll fade-in-up">
+          <p>&copy; 2024 Café Aroma. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+      <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
